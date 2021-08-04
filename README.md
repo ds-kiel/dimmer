@@ -19,8 +19,11 @@ resource-constrained nodes achieving 95.8\% reliability against strong, unknown 
 
 
 To compile and flash Dimmer's image on embedded platforms, please follow the [Contiki-NG setup tutorial](https://github.com/contiki-ng/contiki-ng/wiki).
+
 To compile the Sky image, please go to the `dimmer/apps/dimmer-app` folder and use the following commands: `make clean TARGET=sky && make dimmer-app TARGET=sky -j4`
+
 To convert the image in hex format, please use `msp430-objcopy dimmer-app.sky -O ihex dimmer-app.ihex`
+
 To run Dimmer on DCube, use the `dimmer/apps/dimmer-dcube` application.
 
 ##### Embedded Implementation 
@@ -32,7 +35,9 @@ Currently,  Dimmer only supports the Tmote Sky mote.
 ##### Training and Testing Environement
 
 The training environment is located in the `gyms/` folder, and is an instance of an [OpenAI Gym](https://gym.openai.com/) environment. 
+
 To install the training environment, go to `gyms/` and run `pip install -e .`. This will install the 'dimmer' python package.
+
 The training and evaluation scripts are located in `RL/`, and are written in Python.
 The training scripts require the presence of [OpenAI's baselines](https://github.com/openai/baselines).
 

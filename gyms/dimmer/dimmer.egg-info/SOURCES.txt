@@ -1,0 +1,7 @@
+README.md
+setup.py
+dimmer.egg-info/PKG-INFO
+dimmer.egg-info/SOURCES.txt
+dimmer.egg-info/dependency_links.txt
+dimmer.egg-info/requires.txt
+dimmer.egg-info/top_level.txt
